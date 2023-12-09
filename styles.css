@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Outfit:wght@400;700;800&family=Red+Hat+Display:wght@300;400;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* Menú */
+header{
+	background: #192940;
+	position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+}
+nav {
+	display: grid;
+	grid-template-columns: 0.2fr 1fr;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 26px 16px 0px 16px;
+}
+
+nav img {
+	max-width: 60px;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	place-self: center;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+	padding: 0 30px;
+}
+
+nav ul li:last-child {
+	padding-right: 0px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 4px 0;
+	font-size: 16px;
+}
+
+nav ul li a:hover {
+	border-bottom: 2px solid #FFCC00;
+}
+.ancla{
+    cursor: pointer;
+}
+.menu-next{
+	display: none;
+}
+.container-menu {
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  
+  .bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 3px;
+	background-color: #fff;
+	margin: 4px 0;
+	transition: 0.3s;
+	border-radius: 10px;
+	cursor: pointer;
+  }
+  
+  .change .bar1 {
+	transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:0px;
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+	transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:-18px;;
+  }
+  .active-item{
+    border-bottom: 2px solid #71d8bf;
+    padding: 0 0 3px 0;
+}
+/* Fin Menú */
+/* section Hero */
+.hero-section{
+    background-image: url('./img/Hero-fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-inf{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1080px;
+	margin: 0 auto;
+    padding: 100px 0;
+}
+.hero_inf-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero_inf-cta span{ 
+    font-size: 18px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+.hero_inf-cta h1{ 
+    font-size: 64px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 15px 0;
+}
+.hero_inf-cta p{ 
+    font-size: 24px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+.hero-cta{
+    background: #fff;
+    border: 0;
+    border-radius: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #00C3FF;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all ease 0.7s;
+    margin-top: 50px;
+}
+.hero-cta:hover{
+    background: #FFCC00;
+    color: #fff;
+}
+.hero_inf-img img{
+    width: 90%;
+}
+.hero_inf-img{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.hero_inf-img::after{
+    content: '';
+    background-image: url('./img/deco1.png');
+    position: absolute;
+    display: block;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    bottom: -63px;
+    right: -154px;
+}
+/* end section Hero */
+/* section Bajada */
+.section-bajada{
+    background: #005A7F;
+}
+.bajada-section{
+    padding: 100px 0px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.bajada-section p{
+    font-size: 24px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.bajada-section p span{
+    color: #FFCC00;
+}
+/* end section Hero */
+/* section Logos */
+.slick-prev, .slick-next {
+	display: none;
+}
+.slick-dots li button:before{
+    font-size: 14px !important;
+ }
+ .slick-dots li.slick-active button:before{
+    color: #236da9;
+ }
+ .slider {
+    width: auto !important;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 !important;
+    color: white;
+}
+.section-logos{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    text-align: center;
+}
+.section-logos p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.section-logos h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.content-logos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+}
+.content-logos-mobile{
+    display: none;
+}
+.content-logos img{
+    width: 100%;
+}
+/* end section Logos */
+/* section gestion */
+.gestion-tiempo{
+    background: #F5F5F5;
+}
+.content-gestionT{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
+}
+.img-gestion{
+    position: relative;
+}
+.img-gestion img{
+    width: 100%;
+}
+.img-gestion::after{
+    content: '';
+    background-image: url('./img/deco2.png');
+    position: absolute;
+    display: block;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    top: 10px;
+    left: -155px;
+}
+.gestion-bajada h3{
+    font-size: 48px;
+    line-height: 52px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+}
+.gestion-bajada p{
+    font-size: 18px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+}
+.content-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.items-gestion img{
+ width: 15%;
+}
+.items-gestion p{
+    font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    margin: 10px 0;
+}
+/* end section gestion */
+/* section viaje */
+.viaje-tiempo{
+    background: #fff;
+}
+.content-viaje{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 40px;
+}
+.img-viaje img{
+    width: 100%;
+}
+.viaje-bajada h3{
+    font-size: 48px;
+    line-height: 52px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin: 15px 0;
+}
+.viaje-bajada p{
+    font-size: 18px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+}
+.content-row-viaje{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+.items-viaje img{
+ width: 20%;
+}
+.items-viaje p{
+    font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    margin: 10px 0;
+}
+/* end section viaje */
+/* section no es todo */
+.noEs-todo{
+    background: #F5F5F5;
+    padding: 50px 0;
+}
+.noEs-todo h4{
+    font-size: 28px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin: 10px 0;
+}
+.content-section-noTodo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    max-width: 960px;
+    margin: 80px auto 0;
+}
+.img-text img{
+    width: 100%;
+}
+.img-text h5{
+    font-size: 24px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin: 10px 0;
+}
+.img-text p{
+    font-size: 18px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    margin: 10px 0;
+}
+/* end section no es todo */
+
+/* footer */
+.footer-next{
+    background: #2D2D2D;
+    padding: 20px;
+}
+.contet-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contet-footer span{
+    color: #fff;
+    font-size: 18px;
+}
+.contactos-footer{
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+.contactos-footer img{
+    width: 15%;
+}
+/* end footer */
+/* ----- styles mobile ------ */
+@media (max-width: 930px) {
+	/* nav menu */
+	nav ul.topnav {
+		display: none;
+	}
+	nav ul.show-menu {
+		display: block;
+		position: absolute;
+		top: 90px;
+		background-color: #00C3FF;
+        z-index: 1;
+		width: 100%;
+		left: 0;
+		box-sizing: border-box;
+		padding: 0px 20px 16px 20px;
+		transition: all ease 0.7s;
+	}
+	nav ul.show-menu li {
+		display: block;
+		padding: 16px 0px;
+		font-size: 2rem;
+		border-bottom: 1px solid #fff;
+	}
+	nav ul.show-menu li:last-child {
+		border-bottom: none;
+	}
+	nav ul.show-menu li a:hover {
+		border: none;
+	}
+	.menu-next{
+		display: flex;
+		justify-content: flex-end;
+	}
+   /* end nav menu */
+   /* section Hero */
+.hero-inf{
+	grid-template-columns: 1fr;
+    padding: 50px 20px;
+    row-gap: 30px;
+}
+.hero_inf-cta{
+    align-items: center;
+}
+.hero_inf-cta span{ 
+    font-size: 14px;
+}
+.hero_inf-cta h1{ 
+    line-height: 68px;
+}
+.hero_inf-cta p br{
+    display: none;
+}
+.hero_inf-cta p{ 
+    font-size: 16px;
+}
+.hero-cta{
+    margin-top: 25px;
+    width: 100%;
+}
+.hero-cta:hover{
+    background: #FFCC00;
+    color: #fff;
+}
+.hero_inf-img img{
+    width: 100%;
+}
+.hero_inf-img{
+    align-items: center;
+}
+.hero_inf-img::after{
+    bottom: -26px;
+    right: -16px;
+}
+/* end section Hero */
+/* section Bajada */
+.bajada-section{
+    padding: 50px 20px;
+}
+.bajada-section p{
+    font-size: 16px;
+}
+/* end section Hero */
+/* section Logos */
+.section-logos{
+    padding: 20px 24px 50px;
+    text-align: center;
+}
+.section-logos p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.section-logos h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.content-logos{
+    display: none;
+}
+.content-logos-mobile{
+    display: block;
+}
+.contenedor-slider{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-slider img{
+    width: 100%;
+ }
+ 
+/* end section Logos */ 
+/* section gestion */
+
+.content-gestionT{
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+    column-gap: 90px;
+}
+.img-gestion img{
+    width: 100%;
+}
+.img-gestion::after{
+    content: '';
+    background-image: none;
+}
+.gestion-bajada h3{
+    font-size: 34px;
+    line-height: 38px;
+    text-align: left;
+}
+.gestion-bajada p{
+    font-size: 16px;
+}
+.content-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.items-gestion img{
+ width: 15%;
+}
+.items-gestion p{
+    font-size: 14px;
+}
+/* end section gestion */
+/* section viaje */
+.content-viaje{
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+}
+.img-viaje{
+    margin-top: 30px;
+}
+.img-viaje img{
+    width: 100%;
+}
+.viaje-bajada h3{
+    font-size: 34px;
+    line-height: 38px;
+    text-align: left;
+}
+.viaje-bajada p{
+    font-size: 16px;
+}
+.content-row-viaje{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+}
+.items-viaje{
+    display: flex;
+    row-gap: 20px;
+}
+.items-viaje img{
+ width: 20%;
+}
+.items-viaje p{
+    font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    margin: 10px 0;
+}
+/* end section viaje */
+/* section no es todo */
+.noEs-todo{
+    background: #F5F5F5;
+    padding: 50px 20px;
+}
+.content-section-noTodo{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 25px;
+    max-width: 960px;
+    margin: 40px auto 0;
+}
+.img-text{
+    margin-bottom: 30px;
+}
+.img-text img{
+    width: 100%;
+}
+.img-text h5{
+    font-size: 20px;
+}
+.img-text p{
+    font-size: 16px;
+}
+/* end section no es todo */
+
+/* footer */
+.contet-footer span{
+    font-size: 13px;
+}
+/* end footer */
+}
