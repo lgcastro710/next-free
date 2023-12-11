@@ -266,6 +266,22 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.content-logos2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.content-logos2 img {
+    width: 100px;
 }
 
 .content-logos-mobile {
@@ -273,7 +289,7 @@ nav ul li a:hover {
 }
 
 .content-logos img {
-    width: 100%;
+    width: 100px;
 }
 
 /* end section Logos */
@@ -336,6 +352,7 @@ nav ul li a:hover {
 
 .items-gestion img {
     width: 15%;
+    height: 36.37px;
 }
 
 .items-gestion p {
@@ -599,6 +616,10 @@ nav ul li a:hover {
     }
 
     .content-logos {
+        display: none;
+    }
+
+    .content-logos2 {
         display: none;
     }
 
