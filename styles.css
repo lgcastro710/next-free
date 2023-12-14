@@ -1350,6 +1350,131 @@ nav ul li a {
     }
 
     /* end section docente*/
+    /* section programa*/
+    .programa {
+        background: #F5F5F5;
+        padding: 50px 20px;
+    }
+
+    .programa h3 {
+        font-size: 40px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 890px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .accordion {
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-size: 20px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 400;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: transparent;
+    }
+
+    .panel {
+        padding: 30px 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+
+    .accordion:after {
+        content: "";
+        background-image: url(./img/iconos/Vector-arrow.svg);
+        background-repeat: no-repeat;
+        height: 10px;
+        width: 20px;
+        font-size: 20px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        transition: all ease 0.7s;
+
+    }
+
+    .active:after {
+        content: "";
+        background-image: url(./img/iconos/Vector-arrow.svg);
+        background-repeat: no-repeat;
+        height: 10px;
+        width: 20px;
+        transform: rotateX(180deg);
+    }
+
+    .toolbar-programa {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.3fr;
+        column-gap: 0;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 0 20px;
+        align-items: center;
+        background: #fff;
+        margin-bottom: 15px;
+    }
+
+    .toobar-link {
+        box-shadow: 0px 0px 4px 0px #00000012;
+        transition: all ease 0.3s;
+        cursor: pointer;
+    }
+
+    .toobar-link:hover {
+        background: #cdcdcd2b;
+    }
+
+    .toobar-link:hover a {
+        color: #00C3FF;
+    }
+
+    .toobar-img img {
+        width: 30px;
+    }
+
+    .toolbar-programa p {
+        font-size: 14px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 600;
+        color: #000;
+        text-align: left;
+    }
+
+    .item-link a {
+        font-size: 16px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 400;
+        color: #FFCC00;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .item-link {
+        display: flex;
+        justify-content: end;
+    }
+
+    /* end section programa*/
     /* footer */
     .contet-footer {
         display: grid;
