@@ -875,6 +875,9 @@ nav ul li a {
 }
 
 .accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     color: #000;
     cursor: pointer;
@@ -1727,24 +1730,6 @@ nav ul li a {
         border-radius: 20px;
     }
 
-    .accordion {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        color: #000;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        text-align: left;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-        font-size: 20px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 400;
-    }
-
     .active,
     .accordion:hover {
         background-color: transparent;
@@ -1755,29 +1740,6 @@ nav ul li a {
         background-color: white;
         display: none;
         overflow: hidden;
-    }
-
-    .accordion:after {
-        content: "";
-        background-image: url(./img/iconos/Vector-arrow.svg);
-        background-repeat: no-repeat;
-        height: 10px;
-        width: 20px;
-        font-size: 20px;
-        color: #777;
-        float: right;
-        margin-left: 5px;
-        transition: all ease 0.7s;
-
-    }
-
-    .active:after {
-        content: "";
-        background-image: url(./img/iconos/Vector-arrow.svg);
-        background-repeat: no-repeat;
-        height: 10px;
-        width: 20px;
-        transform: rotateX(180deg);
     }
 
     .toolbar-programa {
