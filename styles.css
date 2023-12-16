@@ -192,6 +192,7 @@ nav ul li a {
 .hero-cta a {
     text-decoration: none !important;
     border-bottom: none;
+    color: #00C3FF;
 }
 
 .hero_inf-img img {
