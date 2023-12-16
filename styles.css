@@ -1,10 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Outfit:wght@400;700;800&family=Red+Hat+Display:wght@300;400;600;700&display=swap');
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('./fonts/Red_Hat_Display/RedHatDisplay-Light.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('./fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('./fonts/Red_Hat_Display/RedHatDisplay-SemiBold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('./fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter/Inter-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neulis Alt';
+    src: url('./fonts/Neulis-Alt/NeulisAlt-Bold.otf') format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
 
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
 }
 
 /* Menú */
@@ -156,7 +193,7 @@ nav ul li a {
 
 .hero_inf-cta h1 {
     font-size: 64px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #fff;
     margin: 15px 0;
@@ -240,6 +277,7 @@ nav ul li a {
 
 .bajada-section p span {
     color: #FFCC00;
+    font-weight: 700;
 }
 
 /* end section Hero */
@@ -275,9 +313,11 @@ nav ul li a {
 .section-logos p {
     font-size: 24px;
     font-weight: 600;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .section-logos h2 {
+    font-family: 'Neulis Alt', sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
@@ -350,7 +390,7 @@ nav ul li a {
 .gestion-bajada h3 {
     font-size: 48px;
     line-height: 52px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: left;
@@ -377,7 +417,7 @@ nav ul li a {
 
 .items-gestion p {
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Inter-Regular', sans-serif;
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -406,7 +446,7 @@ nav ul li a {
 .viaje-bajada h3 {
     font-size: 48px;
     line-height: 52px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: left;
@@ -433,7 +473,7 @@ nav ul li a {
 
 .items-viaje p {
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Inter-Regular', sans-serif;
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -449,7 +489,7 @@ nav ul li a {
 
 .noEs-todo h4 {
     font-size: 28px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -504,7 +544,7 @@ nav ul li a {
 
 .nuestra-oferta h3 {
     font-size: 48px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -597,7 +637,7 @@ nav ul li a {
 
 .experiencias h3 {
     font-size: 40px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -676,7 +716,7 @@ nav ul li a {
 .testimonios h4 {
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     color: #000;
     text-align: center;
     padding: 50px 0;
@@ -690,7 +730,7 @@ nav ul li a {
 .section-exp_persona h3 {
     font-size: 48px;
     font-weight: 700;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     color: #000;
     text-align: center;
     margin: 0 0 50px 0;
@@ -769,7 +809,7 @@ nav ul li a {
 .card-carousel p {
     font-size: 20px;
     font-weight: 400;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Inter-Regular', sans-serif;
     color: #000;
     margin: 10px 0;
     text-align: left;
@@ -807,15 +847,15 @@ nav ul li a {
 .text-docente span {
     font-size: 24px;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     color: #FFCC00;
     text-align: left;
     margin: 10px 0;
 }
 
 .text-docente h4 {
-    font-size: 40px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-size: 56px;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #fff;
     text-align: left;
@@ -859,8 +899,8 @@ nav ul li a {
 }
 
 .programa h3 {
-    font-size: 40px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-size: 56px;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -888,7 +928,7 @@ nav ul li a {
     outline: none;
     transition: 0.4s;
     font-size: 20px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis Alt', sans-serif;
     font-weight: 400;
 }
 
@@ -969,7 +1009,7 @@ nav ul li a {
 .item-link a {
     font-size: 20px;
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: #FFCC00;
     text-align: right;
     text-decoration: none;
@@ -997,7 +1037,7 @@ nav ul li a {
 
 .card-form h3 {
     font-size: 38px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis-alt', sans-serif;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -1021,7 +1061,7 @@ nav ul li a {
 
 .contactos-form h5 {
     font-size: 20px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Neulis-alt', sans-serif;
     font-weight: 700;
     color: #000;
     margin: 10px 0;
@@ -1050,8 +1090,6 @@ nav ul li a {
     font-weight: 400;
     color: #000;
 }
-
-.form-contact {}
 
 .input-form {
     border: 1px solid #D8D8D8;
@@ -1125,6 +1163,7 @@ nav ul li a {
 .contet-footer span {
     color: #fff;
     font-size: 18px;
+    font-family: 'Neulis-alt', sans-serif;
 }
 
 .contactos-footer {
@@ -1301,8 +1340,8 @@ nav ul li a {
     }
 
     .gestion-bajada h3 {
-        font-size: 34px;
-        line-height: 38px;
+        font-size: 32px;
+        line-height: 36px;
         text-align: left;
     }
 
@@ -1341,8 +1380,8 @@ nav ul li a {
     }
 
     .viaje-bajada h3 {
-        font-size: 34px;
-        line-height: 38px;
+        font-size: 32px;
+        line-height: 36px;
         text-align: left;
     }
 
@@ -1448,12 +1487,7 @@ nav ul li a {
     }
 
     .nuestra-oferta h3 {
-        font-size: 46px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 700;
-        color: #000;
-        text-align: center;
-        margin: 10px 20px;
+        font-size: 32px;
     }
 
     .nuestra-oferta p {
@@ -1702,6 +1736,10 @@ nav ul li a {
 
     }
 
+    .text-docente h4 {
+        font-size: 32px;
+    }
+
     .img-docente {
         height: 420px;
         width: 90%;
@@ -1715,11 +1753,7 @@ nav ul li a {
     }
 
     .programa h3 {
-        font-size: 40px;
-        font-family: 'Red Hat Display', sans-serif;
-        font-weight: 700;
-        color: #000;
-        text-align: center;
+        font-size: 32px;
     }
 
     .container {
