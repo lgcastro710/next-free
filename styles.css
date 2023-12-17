@@ -27,7 +27,7 @@
 }
 
 @font-face {
-    font-family: 'Inter-Regular';
+    font-family: 'Inter';
     src: url('./fonts/Inter/Inter-Regular.ttf') format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -79,7 +79,7 @@ nav ul li {
     list-style-type: none;
     display: inline-block;
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     padding: 0 30px;
 }
 
@@ -164,7 +164,7 @@ nav ul li a {
 /* Fin Menú */
 /* section Hero */
 .hero-section {
-    background-image: url('./img/Hero-fondo.png');
+    background-image: url('./img/Hero.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -186,14 +186,14 @@ nav ul li a {
 
 .hero_inf-cta span {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 600;
+    font-family: 'Red Hat Display';
+    font-weight: 400;
     color: #fff;
 }
 
 .hero_inf-cta h1 {
     font-size: 64px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #fff;
     margin: 15px 0;
@@ -201,8 +201,8 @@ nav ul li a {
 
 .hero_inf-cta p {
     font-size: 24px;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 600;
+    font-family: 'Red Hat Display';
+    font-weight: 400;
     color: #fff;
     margin: 0;
 }
@@ -213,7 +213,7 @@ nav ul li a {
     border-radius: 36px;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     color: #00C3FF;
     padding: 12px 24px;
     cursor: pointer;
@@ -223,13 +223,18 @@ nav ul li a {
 
 .hero-cta:hover {
     background: #FFCC00;
-    color: #fff;
+    color: #fff !important;
 }
 
-.hero-cta a {
+.hero-cta:hover a {
+    color: #fff !important;
+}
+
+.hero_inf-cta a {
     text-decoration: none !important;
     border-bottom: none;
     color: #00C3FF;
+    transition: all ease 0.7s;
 }
 
 .hero_inf-img img {
@@ -269,7 +274,7 @@ nav ul li a {
 
 .bajada-section p {
     font-size: 24px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -306,20 +311,21 @@ nav ul li a {
 .section-logos {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 40px 0 0;
+    padding: 40px 0 40px;
     text-align: center;
 }
 
 .section-logos p {
     font-size: 24px;
     font-weight: 600;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
 }
 
 .section-logos h2 {
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-size: 24px;
     font-weight: 700;
+    padding: 50px 0;
 }
 
 .content-logos {
@@ -364,7 +370,7 @@ nav ul li a {
     padding: 100px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 90px;
+    column-gap: 60px;
 }
 
 .img-gestion {
@@ -390,7 +396,7 @@ nav ul li a {
 .gestion-bajada h3 {
     font-size: 48px;
     line-height: 52px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: left;
@@ -398,7 +404,7 @@ nav ul li a {
 
 .gestion-bajada p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -408,6 +414,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
+    padding-top: 30px;
 }
 
 .items-gestion img {
@@ -417,7 +424,7 @@ nav ul li a {
 
 .items-gestion p {
     font-size: 16px;
-    font-family: 'Inter-Regular', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -437,6 +444,8 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     column-gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-viaje img {
@@ -446,16 +455,15 @@ nav ul li a {
 .viaje-bajada h3 {
     font-size: 48px;
     line-height: 52px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: left;
-    margin: 15px 0;
 }
 
 .viaje-bajada p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -465,6 +473,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+    padding-top: 30px;
 }
 
 .items-viaje img {
@@ -473,7 +482,7 @@ nav ul li a {
 
 .items-viaje p {
     font-size: 16px;
-    font-family: 'Inter-Regular', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -489,7 +498,7 @@ nav ul li a {
 
 .noEs-todo h4 {
     font-size: 28px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -514,7 +523,7 @@ nav ul li a {
 
 .img-text h5 {
     font-size: 24px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 700;
     color: #000;
     text-align: left;
@@ -522,8 +531,8 @@ nav ul li a {
 }
 
 .img-text p {
-    font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -544,7 +553,7 @@ nav ul li a {
 
 .nuestra-oferta h3 {
     font-size: 48px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -553,7 +562,7 @@ nav ul li a {
 
 .nuestra-oferta p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #000;
     text-align: left;
@@ -575,6 +584,20 @@ nav ul li a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
+    cursor: pointer;
+    transition: .5s ease;
+    -moz-transition: .5s ease;
+    -webkit-tra-transition: .5s ease;
+    -o-tra-transition: .5s ease;
+}
+
+.card:hover {
+    background: #40aaff;
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
 }
 
 .icon-titleCard {
@@ -590,7 +613,7 @@ nav ul li a {
 
 .icon-titleCard span {
     font-size: 24px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 700;
     color: #000;
     text-align: left;
@@ -606,7 +629,7 @@ nav ul li a {
 
 .text-card p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #fff;
     text-align: left;
@@ -619,6 +642,7 @@ nav ul li a {
 
 .footer-card span {
     color: #FFCC00;
+    font-family: 'Red Hat Display';
     font-size: 24px;
     font-weight: 700;
 }
@@ -637,7 +661,7 @@ nav ul li a {
 
 .experiencias h3 {
     font-size: 40px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -668,7 +692,7 @@ nav ul li a {
 
 .icons-text p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #000;
     text-align: center;
@@ -688,7 +712,7 @@ nav ul li a {
     border-radius: 36px;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     color: #fff;
     padding: 12px 24px;
     cursor: pointer;
@@ -716,7 +740,7 @@ nav ul li a {
 .testimonios h4 {
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     color: #000;
     text-align: center;
     padding: 50px 0;
@@ -730,7 +754,7 @@ nav ul li a {
 .section-exp_persona h3 {
     font-size: 48px;
     font-weight: 700;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     color: #000;
     text-align: center;
     margin: 0 0 50px 0;
@@ -747,7 +771,7 @@ nav ul li a {
 .flex-text_img p {
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     color: #000;
     margin: 10px 0;
     text-align: center;
@@ -783,13 +807,15 @@ nav ul li a {
 
 .carousel-content img {
     width: 200px;
+    height: 200px;
     height: auto;
     border-radius: 5px;
 }
 
 .card-carousel {
     background: #fff;
-    padding: 30px;
+    padding: 10px 30px;
+    height: 180px;
     border-radius: 20px;
     box-shadow: 0px 0px 4px 0px #00000012;
     display: flex;
@@ -798,18 +824,18 @@ nav ul li a {
 }
 
 .card-carousel h6 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     color: #00C3FF;
     margin: 10px 0;
     text-align: left;
 }
 
 .card-carousel p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    font-family: 'Inter-Regular', sans-serif;
+    font-family: 'Inter';
     color: #000;
     margin: 10px 0;
     text-align: left;
@@ -817,6 +843,7 @@ nav ul li a {
 
 .card-carousel a img {
     width: 30px;
+    height: 30px;
 }
 
 .slick-prev,
@@ -846,7 +873,7 @@ nav ul li a {
 
 .text-docente span {
     font-size: 24px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 700;
     color: #FFCC00;
     text-align: left;
@@ -855,7 +882,7 @@ nav ul li a {
 
 .text-docente h4 {
     font-size: 56px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #fff;
     text-align: left;
@@ -864,7 +891,7 @@ nav ul li a {
 
 .text-docente p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #fff;
     text-align: left;
@@ -900,7 +927,7 @@ nav ul li a {
 
 .programa h3 {
     font-size: 56px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -928,7 +955,7 @@ nav ul li a {
     outline: none;
     transition: 0.4s;
     font-size: 20px;
-    font-family: 'Neulis Alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 400;
 }
 
@@ -1000,7 +1027,7 @@ nav ul li a {
 
 .toolbar-programa p {
     font-size: 20px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 600;
     color: #000;
     text-align: left;
@@ -1008,7 +1035,7 @@ nav ul li a {
 
 .item-link a {
     font-size: 20px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 600;
     color: #FFCC00;
     text-align: right;
@@ -1035,9 +1062,9 @@ nav ul li a {
     margin: 0 auto;
 }
 
-.card-form h3 {
+.card-form h2 {
     font-size: 38px;
-    font-family: 'Neulis-alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -1045,7 +1072,7 @@ nav ul li a {
 
 .card-form p {
     font-size: 18px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 600;
     color: #000;
     text-align: center;
@@ -1061,7 +1088,7 @@ nav ul li a {
 
 .contactos-form h5 {
     font-size: 20px;
-    font-family: 'Neulis-alt', sans-serif;
+    font-family: 'Neulis Alt';
     font-weight: 700;
     color: #000;
     margin: 10px 0;
@@ -1086,7 +1113,7 @@ nav ul li a {
 
 .icons-contact a {
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 400;
     color: #000;
 }
@@ -1105,6 +1132,8 @@ nav ul li a {
     margin-right: 10px;
     border-right: 1px solid #cdcdcd;
     padding: 0 10px 0 0;
+    height: 20px;
+    width: 20px;
 }
 
 .searchbar-input {
@@ -1124,7 +1153,7 @@ nav ul li a {
     border: none;
     outline: none;
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     font-weight: 600;
     color: #000;
 }
@@ -1163,7 +1192,8 @@ nav ul li a {
 .contet-footer span {
     color: #fff;
     font-size: 18px;
-    font-family: 'Neulis-alt', sans-serif;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
 }
 
 .contactos-footer {
@@ -1407,7 +1437,7 @@ nav ul li a {
 
     .items-viaje p {
         font-size: 16px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         font-weight: 400;
         color: #000;
         text-align: left;
@@ -1509,7 +1539,7 @@ nav ul li a {
 
     .icon-titleCard span {
         font-size: 24px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         font-weight: 700;
         color: #000;
         text-align: left;
@@ -1525,7 +1555,7 @@ nav ul li a {
 
     .text-card p {
         font-size: 18px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         font-weight: 400;
         color: #fff;
         text-align: left;
@@ -1691,7 +1721,7 @@ nav ul li a {
     .card-carousel h4 {
         font-size: 32px;
         font-weight: 700;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         color: #00C3FF;
         margin: 10px 0;
         text-align: left;
@@ -1700,7 +1730,7 @@ nav ul li a {
     .card-carousel p {
         font-size: 20px;
         font-weight: 400;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         color: #000;
         margin: 10px 0;
         text-align: left;
@@ -1809,7 +1839,7 @@ nav ul li a {
 
     .toolbar-programa p {
         font-size: 11px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         font-weight: 600;
         color: #000;
         text-align: left;
@@ -1817,7 +1847,7 @@ nav ul li a {
 
     .item-link a {
         font-size: 11px;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Red Hat Display';
         font-weight: 400;
         color: #FFCC00;
         text-align: right;
