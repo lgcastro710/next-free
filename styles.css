@@ -1715,7 +1715,8 @@ nav ul li a {
     }
 
     .card-carousel img {
-        width: 20%;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
     }
 
