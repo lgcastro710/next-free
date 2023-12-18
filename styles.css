@@ -1711,10 +1711,11 @@ nav ul li a {
         display: flex;
         flex-direction: column;
         align-items: start;
+        height: 370px;
     }
 
     .card-carousel img {
-        width: 15%;
+        width: 20%;
         border-radius: 50%;
     }
 
