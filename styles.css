@@ -1166,7 +1166,7 @@ nav ul li a {
     margin-top: 20px;
     color: #fff;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     transition: all ease 0.3s;
 }
@@ -1891,6 +1891,10 @@ nav ul li a {
 
     .icons-contact img {
         margin-right: 10px;
+    }
+
+    .cta-submit {
+        padding-bottom: 30px;
     }
 
     .cta-submit input {
