@@ -777,9 +777,41 @@ nav ul li a {
     text-align: center;
 }
 
-.flex-text_img img {
-    width: 90%;
+.box-promedio {
+    background: #005A7F;
+    padding: 20px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.content-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-star img {
+    width: 10%;
+}
+
+.box-promedio span {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Neulis Alt';
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.box-promedio p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter';
+    color: #fff;
+    margin: 0;
+    text-align: center;
 }
 
 .carousel-desktop {
@@ -964,11 +996,38 @@ nav ul li a {
     background-color: transparent;
 }
 
+.accordion-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: 'Neulis Alt';
+    font-weight: 400;
+}
+
+.active,
+.accordion-2:hover {
+    background-color: transparent;
+}
+
 .panel {
     padding: 30px 18px;
     background-color: white;
     display: none;
     overflow: hidden;
+}
+
+.activ-panel {
+    display: block;
 }
 
 .accordion:after {
@@ -983,6 +1042,30 @@ nav ul li a {
     margin-left: 5px;
     transition: all ease 0.7s;
 
+}
+
+.accordion-2:after {
+    content: "";
+    background-image: url(./img/iconos/Vector-arrow.svg);
+    background-repeat: no-repeat;
+    transform: rotateX(180deg);
+    height: 10px;
+    width: 20px;
+    font-size: 20px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    transition: all ease 0.7s;
+
+}
+
+.active2:after {
+    content: "";
+    background-image: url(./img/iconos/Vector-arrow.svg);
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 20px;
+    transform: rotateX(0deg);
 }
 
 .active:after {

@@ -127,15 +127,15 @@
                 <div class="content-row-viaje">
                     <div class="items-viaje">
                         <img src="./img/iconos/play.svg" alt="">
-                        <p>Tener mayor protagonismo en la gestión del tiempo y la organización de las tareas.</p>
+                        <p>Videos explicativos para explorar paso a paso las claves de la gestión del tiempo.</p>
                     </div>
                     <div class="items-viaje">
                         <img src="./img/iconos/listita.svg" alt="">
-                        <p>Visualizar, priorizar y ejecutar tareas con claridad y fluidez para maximizar resultados.</p>
+                        <p>Actividades prácticas con hojas descargables para poner en acción lo aprendido.</p>
                     </div>
                     <div class="items-viaje">
                         <img src="./img/iconos/mic2.svg" alt="">
-                        <p>Alcanzar objetivos a tiempo a través de un mejor manejo del flujo de trabajo.</p>
+                        <p>Entrevistas en audio a expertas y expertos de la gestión del tiempo con casos concretos.</p>
                     </div>
                 </div>
             </div>
@@ -385,14 +385,24 @@
             <h3>La experiencia en primera persona</h3>
             <div class="flex-text_img">
                 <p>Más de 2.500 personas ya mejoraron sus tiempos, ¡y nos encanta lo que comentan!</p>
-                <img src="./img/box-new.png" alt="ContentBox">
+                <div class="box-promedio">
+                    <div class="content-star">
+                        <img src="./img/iconos/star.png" alt="">
+                        <img src="./img/iconos/star.png" alt="">
+                        <img src="./img/iconos/star.png" alt="">
+                        <img src="./img/iconos/star.png" alt="">
+                        <img src="./img/iconos/m-star.png" alt="">
+                    </div>
+                    <span>4,69 / 5</span>
+                    <p>Promedio de valoración</p>
+                </div>
             </div>
         </div>
  <h4>Conocé algunos de sus testimonios:</h4>
     <div class="carousel-desktop">
         <div class="slider slider-nav2">
             <div class="carousel-content">
-                <img src="./img/testimonios-PabloTrindade.jpeg" alt="">
+                <img src="./img/testimonios-PedroSebastián.jpeg" alt="">
                 <div class="card-carousel">
                     <h6>Pedro Sebastián Mingo</h6>
                     <span></span>
@@ -402,7 +412,7 @@
                 </div>
             </div>
             <div class="carousel-content">
-                <img src="./img/testimonios-PedroSebastián.jpeg" alt="">
+                <img src="./img/testimonios-PabloTrindade.jpeg" alt="">
                 <div class="card-carousel">
                     <h6>Pablo Trindade </h6>
                     <span></span>
@@ -428,7 +438,7 @@
         <div class="slider slider-nav2">
             <div class="carousel-content">                
                 <div class="card-carousel mx-10">
-                    <img src="./img/testimonios-PabloTrindade.jpeg" alt="">
+                    <img src="./img/testimonios-PedroSebastián.jpeg" alt="">
                     <h6>Pedro Sebastián Mingo</h6>
                     <span></span>
                     <p>“Pasé de tener una relación con el tiempo marcada por el estrés, la obligación y la improductividad a una relación
@@ -438,7 +448,7 @@
             </div>
             <div class="carousel-content">                
                 <div class="card-carousel mx-10">
-                    <img src="./img/testimonios-PedroSebastián.jpeg" alt="">
+                    <img src="./img/testimonios-PabloTrindade.jpeg" alt="">
                     <h6>Pablo Trindade </h6>
                     <span></span>
                     <p>“Muy recomendable para aprender a organizarse mejor, tener mayor productividad y calidad.”</p>
@@ -489,8 +499,8 @@
         <div class="container">  
             <!-- acordion 1 -->
             <div class="accordion-contianer">
-              <button class="accordion">Introducción</button>
-              <div class="panel">
+              <button class="accordion-2">Introducción</button>
+              <div class="panel activ-panel">
                 <!-- toolbars -->
                 <div class="toolbar-programa">
                     <div class="toobar-img">
@@ -810,10 +820,6 @@
                         <a href="mailto:thomas.wallet@nextstepslab.com" target="_blank">Escríbenos por email</a>
                     </div>
                     <div class="icons-contact">
-                        <img src="./img/iconos/phone.svg" alt="">
-                        <a href="telf:+(54)92994581766" target="_blank">Llámanos al +54 9 299 458 1766</a>
-                    </div>
-                    <div class="icons-contact">
                         <img src="./img/iconos/telegram.svg" alt="">
                         <a href="https://t.me/thomas_wallet" target="_blank">Contáctanos por Telegram</a>
                     </div>
@@ -849,7 +855,6 @@
             <div class="contactos-footer">
                 <a href="https://wa.me/5492994581766" target="_blank"><img src="./img/iconos/Social-whatsapp.png" alt=""></a>
                 <a href="mailto:thomas.wallet@nextstepslab.com" target="_blank"><img src="./img/iconos/Social-email.png" alt=""></a>
-                <a href="telf:+(54)92994581766" target="_blank"><img src="./img/iconos/Social-phone.png" alt=""></a>
                 <a href="https://t.me/thomas_wallet" target="_blank"><img src="./img/iconos/Social-telegram.png" alt=""></a>
             </div>
         </div>
@@ -913,6 +918,12 @@
       $(document).ready(function() {
         $(".accordion").on("click", function() {
             $(this).toggleClass("active");
+            $(this).next().slideToggle(300);
+        });
+    });
+    $(document).ready(function() {
+        $(".accordion-2").on("click", function() {
+            $(this).toggleClass("active2");
             $(this).next().slideToggle(300);
         });
     });
