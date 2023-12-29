@@ -794,6 +794,7 @@ nav ul li a {
 
 .content-star img {
     width: 10%;
+    margin: 0 5px;
 }
 
 .box-promedio span {
@@ -1761,12 +1762,6 @@ nav ul li a {
     .flex-text_img p {
         font-size: 22px;
         font-weight: 700;
-        margin-bottom: 40px;
-    }
-
-    .flex-text_img img {
-        width: 90%;
-        border-radius: 15px;
     }
 
     .carousel-desktop {
@@ -1791,6 +1786,7 @@ nav ul li a {
         flex-direction: column;
         align-items: start;
         height: 370px;
+        padding: 20px 30px;
     }
 
     .card-carousel img {
@@ -1875,6 +1871,10 @@ nav ul li a {
         background-color: white;
         display: none;
         overflow: hidden;
+    }
+
+    .activ-panel {
+        display: block !important;
     }
 
     .toolbar-programa {
