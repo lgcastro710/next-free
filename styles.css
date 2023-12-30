@@ -1754,6 +1754,10 @@ nav ul li a {
         margin: 10px 0;
     }
 
+    .box-promedio {
+        margin-top: 40px;
+    }
+
     .flex-text_img {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -1874,7 +1878,7 @@ nav ul li a {
     }
 
     .activ-panel {
-        display: block !important;
+        display: block;
     }
 
     .toolbar-programa {
